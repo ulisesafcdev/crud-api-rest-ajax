@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CRUD API REST AJAX</title>
+</head>
+
+<body>
+    <div class="jumbotron rounded-0 mb-3">
+        <h1 class="display-4">CRUD API REST AJAX</h1>
+        <hr class="my-4">
+        <p class="lead">
+            Create, Read, Update & Delete API REST local (JSON Server) con el objeto XMLHttpRequest
+        </p>
+    </div>
+
+    <div class="container mb-4">
+        <section class="crud"> <!-- Section CRUD-->
+            <div class="row">
+                <article class="col-md-4">
+                    <form action="" class="crud-form"> <!-- CRUD Form-->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h3 class="crud-title">Nuevo Delantero</h3> <!-- CRUD Title-->
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre del jugador:</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pais">Pais de Origen:</label>
+                                    <input type="text" id="pais" name="pais" class="form-control">
+                                </div>
+                            </div>
+                            <div class="card-footer"> <!-- Botones SUBMIT & hiddenID -->
+                                <input type="submit" value="Guardar Datos" class="btn btn-success btn-block">
+                                <input type="hidden" name="id">
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <!-- ---------------------------------------------------------------------------------------- -->
+                <article class="col-md-8">
+                    <table class="table table-bordered text-center crud-table"> <!-- CRUD Table-->
+                        <thead>
+                            <tr>
+                                <th>Nombre de jugador</th>
+                                <th>Pais de origen</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <template id="crud-template"> <!-- CRUD TEMPLATE-->
+            <tr>
+                <td class="nombre"></td>
+                <td class="pais"></td>
+                <td>
+                    <button class="btn btn-sm btn-warning edit">U</button>
+                    <button class="btn btn-sm btn-danger delete">D</button>
+                </td>
+            </tr>
+        </template>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
