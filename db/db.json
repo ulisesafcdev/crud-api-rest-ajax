@@ -1,0 +1,66 @@
+{
+  "delanteros": [
+    {
+      "id": 1,
+      "nombre": "Ansu Fati",
+      "pais": "Espania"
+    },
+    {
+      "id": 2,
+      "nombre": "Adama Traore",
+      "pais": "Espania"
+    },
+    {
+      "nombre": "Pierre-Emeric Aubameyang",
+      "pais": "Gabon",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Martin Braithwatte",
+      "pais": "Dinamarca"
+    },
+    {
+      "id": 5,
+      "nombre": "Luuk de Jong",
+      "pais": "Holanda"
+    },
+    {
+      "id": 6,
+      "nombre": "Memphis Depay",
+      "pais": "Holanda"
+    },
+    {
+      "id": 7,
+      "nombre": "Ousmane Dembele",
+      "pais": "Francia"
+    },
+    {
+      "id": 8,
+      "nombre": "Ferran Torres",
+      "pais": "Espania"
+    },
+    {
+      "nombre": "Erling Haaland",
+      "pais": "Irlanda",
+      "id": 9
+    }
+  ],
+  "mediocampistas": [
+    {
+      "id": 1,
+      "nombre": "Sergio Busquets",
+      "pais": "Espania"
+    },
+    {
+      "id": 2,
+      "nombre": "Frenkie de Jong",
+      "pais": "Holanda"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedri",
+      "pais": "Espania"
+    }
+  ]
+}
